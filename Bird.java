@@ -4,7 +4,7 @@ public class Bird
     // instance variables - replace the example below with your own
     private int age;
     private String breed;
-    private String color;
+    public String color;
 
     /**
      * Constructor for objects of class Birdexam
@@ -17,6 +17,9 @@ public class Bird
         this.age = age;
     }
 
+    public String getColor(){
+        return color;
+    }
     /**
      * An example of a method - replace this comment with your own
      *

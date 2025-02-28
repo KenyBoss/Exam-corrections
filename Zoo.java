@@ -12,6 +12,23 @@ public class Zoo
   public Zoo(){
       zooBirds.add(new Bird("blue" ,"blue jay",2));
       zooBirds.add(new Bird("red,","red cardinal",1));
+      
+      zooBirds.add(new Bird("blue,","red cardinal",1));
+      zooBirds.add(new Bird("blue,","red cardinal",1));
+      zooBirds.add(new Bird("red,","red cardinal",1));
+      zooBirds.add(new Bird("red,","red cardinal",1));
+      zooBirds.add(new Bird("red,","red cardinal",1));
+      zooBirds.add(new Bird("blue,","red cardinal",1));
+  }
+  
+  int countBlueBirds(){
+      int countBlueBirds=0;
+      for (Bird b : zooBirds){
+          if (b.getColor().equals("blue")){
+              countBlueBirds++;
+          }
+      }
+      return countBlueBirds;
   }
   /**
    * public void countBlueBirds()
